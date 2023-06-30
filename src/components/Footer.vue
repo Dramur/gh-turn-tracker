@@ -16,7 +16,7 @@ const { elements } = toRefs(useApplication().state)
     >
       <img
         alt="logo"
-        :src="'/assets/icons/' + element.icon"
+        :src="'/icons/' + element.icon"
       >
     </Button>
   </div>
