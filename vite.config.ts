@@ -5,4 +5,10 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: "/gloomhaven-turn-tracker/",
   plugins: [vue()],
+  root: 'src',
+  cacheDir: '../.vite/cache',
+  build: {
+    outDir: '../.vite/dist',
+    emptyOutDir: true,
+  },
 })

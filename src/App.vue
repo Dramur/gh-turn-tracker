@@ -1,30 +1,114 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="flex align-items-center justify-content-center">
+    Round
   </div>
-  <HelloWorld msg="Vite + Vue" />
+
+  <div class="flex flex-wrap align-items-center">
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo small"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo small"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo small"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+    <div class="col">
+      <img
+        src="./assets/icons/fh-dark-color-icon.png"
+        class="logo"
+        alt="Dark logo"
+      >
+    </div>
+  </div>
+
+  <div class="flex justify-content-center align-items-center">
+    <Button
+      icon="pi pi-check"
+      rounded
+    />
+  </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+img.logo {
+  width: 10rem;
+  height: 10rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+img.small {
+  width: 5rem;
+  height: 5rem;
 }
 </style>

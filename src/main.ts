@@ -1,15 +1,25 @@
 import { createApp } from 'vue'
-import './style.css'
+import { createPinia } from 'pinia'
+
 import App from './App.vue'
 import PrimeVue from 'primevue/config'
 
+import Button from 'primevue/button'
+
 //theme
-import "primevue/resources/themes/mdc-dark-indigo/theme.css";     
-    
+import "primevue/resources/themes/mdc-dark-indigo/theme.css"
+
 //core
-import "primevue/resources/primevue.min.css";
+import "primevue/resources/primevue.min.css"
+import '@/assets/styles/style.css'
 
-const app = createApp(App)
-app.use(PrimeVue)
+// flex
+import "primeflex/primeflex.min.css"
 
-app.mount('#app')
+createApp(App)
+  .use(PrimeVue)
+  .use(createPinia())
+
+  .component('Button', Button)
+
+  .mount('#app')
