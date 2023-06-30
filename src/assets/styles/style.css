@@ -24,3 +24,24 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+button.element-button {
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem;
+}
+
+button.element-button img {
+  height: 6rem;
+}
+
+button.element-button.waning img {
+  height: 8rem;
+  opacity: 0.5;
+}
+
+button.element-button.strong img {
+  height: 10rem;
+}
