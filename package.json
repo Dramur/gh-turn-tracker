@@ -1,16 +1,16 @@
 {
-  "homepage": "https://dramur.github.io/gloomhaven-turn-tracker/",
-  "name": "gloomhaven-turn-tracker",
+  "homepage": "https://dramur.github.io/gh-turn-tracker/",
+  "name": "gh-turn-tracker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "serve": "vite --host",
     "dev": "yarn serve",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d .vite/dist"
   },
   "dependencies": {
     "pinia": "^2.1.4",

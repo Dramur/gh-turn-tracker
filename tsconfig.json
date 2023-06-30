@@ -12,7 +12,8 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "types": [
-      "vite/client"
+      "vite/client",
+      "node"
     ],
     "paths": {
       "@/*": [
@@ -27,7 +28,6 @@
   "exclude": [
     "build",
     "node_modules",
-    ".yarn",
-    "i18n"
+    ".yarn"
   ]
 }
