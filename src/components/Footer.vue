@@ -7,18 +7,22 @@ const { elements } = toRefs(useApplication().state)
 </script>
 
 <template>
-  <div class="flex justify-content-center align-items-center mb-2">
-    <Button
+  <div class="flex flex-wrap justify-content-center align-items-center mb-2">
+    <div
       v-for="element in elements"
       :key="element.name"
-      class="element-button"
-      @click="infuseElement(element)"
+      class="col"
     >
-      <img
-        alt="logo"
-        :src="'/icons/' + element.icon"
+      <Button
+        class="element-button"
+        @click="infuseElement(element)"
       >
-    </Button>
+        <img
+          :alt="element.name"
+          :src="'./icons/' + element.icon"
+        >
+      </Button>
+    </div>
   </div>
 </template>
 

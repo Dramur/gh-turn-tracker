@@ -45,3 +45,20 @@ button.element-button.waning img {
 button.element-button.strong img {
   height: 10rem;
 }
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px) {
+  button.element-button img {
+    height: 4rem;
+  }
+
+  button.element-button.waning img {
+    height: 4rem;
+    opacity: 0.5;
+  }
+
+  button.element-button.strong img {
+    height: 5rem;
+  }
+}

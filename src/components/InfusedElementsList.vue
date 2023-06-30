@@ -18,7 +18,7 @@ const store = useApplication()
       >
         <img
           alt="logo"
-          :src="'/icons/' + element.icon"
+          :src="'./icons/' + element.icon"
         >
       </Button>
     </div>
