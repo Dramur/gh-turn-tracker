@@ -17,7 +17,7 @@ const store = useApplication()
         @click="store.consumeElement(element)"
       >
         <img
-          alt="logo"
+          :alt="element.name"
           :src="'./icons/' + element.icon"
         >
       </Button>

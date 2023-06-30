@@ -7,19 +7,26 @@ const { turn } = toRefs(useApplication().state)
 </script>
 
 <template>
-  <div class="flex align-items-center justify-content-center">
-    Turn {{ turn }}
-    <Button
-      icon="pi pi-step-forward"
-      class="m-2"
-      @click="nextTurn"
-    />
-    <Button
-      icon="pi pi-refresh"
-      class="m-2"
-      @click="resetGame"
-    />
-  </div>
+  <Toolbar>
+    <template #center>
+      <p class="turn-counter">
+        Turn {{ turn }}
+      </p>
+    </template>
+
+    <template #end>
+      <Button
+        icon="pi pi-step-forward"
+        class="m-2"
+        @click="nextTurn"
+      />
+      <Button
+        icon="pi pi-refresh"
+        class="m-2"
+        @click="resetGame"
+      />
+    </template>
+  </Toolbar>
 </template>
 
 <style scoped>

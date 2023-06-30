@@ -5,6 +5,7 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config'
 
 import Button from 'primevue/button'
+import Toolbar from 'primevue/toolbar'
 
 //theme
 import 'primevue/resources/themes/mdc-dark-indigo/theme.css'
@@ -24,5 +25,6 @@ createApp(App)
   .use(createPinia())
 
   .component('Button', Button)
+  .component('Toolbar', Toolbar)
 
   .mount('#app')
